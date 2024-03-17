@@ -78,21 +78,18 @@
             gap: 1.8rem;
             margin-bottom: 6.2rem;
         }
-        .skill-card {
+        .skills-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-column-gap: 5rem;
             grid-row-gap: 7.1rem;
-            h5 {
+            align-items: center;
+            justify-content: center;
+            .card-recurso {
+                margin: 0 auto;
                 align-items: center;
                 justify-content: center;
-                margin: 0 auto;
-                padding-bottom: 1.6rem;
-            }
-            .barra {
-                max-width: 21.2rem;
-                height: 4rem;
             }
         }
     }
