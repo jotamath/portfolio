@@ -1,0 +1,99 @@
+.s-hero {
+    padding-top: 8rem;
+    .hero-content {
+        width: 100%;
+        max-width: 141.8rem;
+        @include flexCenterJustify;
+        padding-bottom: 5.4rem;
+    }
+    .left {
+        flex: 1;
+        display: block;
+        max-width: 42.2rem;
+        h1 {
+            font-size: 5.6rem;
+        }
+        p {
+            max-width: 23.6rem;
+            font-size: 2.2rem;
+        }
+        .btn-primary {
+            margin-top: 13rem;
+        }
+        .redes-sociais {
+            margin-top: 17rem;
+            @include flexCenterJustify;
+            max-width: 17.2rem;
+            gap: 2.6rem;
+            img {
+                width: 100%;
+                max-width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+
+    .right {
+        width: 100%;
+        max-width: 70.5rem;
+        height: 69.7rem;
+    }
+}
+
+.s-about {
+    .superior {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding-top: 7rem;
+        .foto-sobre {
+            margin: 0 auto;
+            max-width: 12.6rem;
+            height: 16.4rem;
+            width: 100%;
+            margin-bottom: 3.4rem;
+        }
+        .text {
+            margin: 0 auto;
+            span {
+                @include flexTotalCenter;
+                gap: 1.8rem;
+                .h3-azul {
+                    color: $blue-20;
+                }
+            }
+            h5, p {
+                @include flexTotalCenter;
+            }
+            p {
+                margin-bottom: 8rem;
+            }
+        }
+    }
+
+    .inferior {
+        display: block;
+        span {
+            @include flexTotalCenter;
+            gap: 1.8rem;
+            margin-bottom: 6.2rem;
+        }
+        .skill-card {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 5rem;
+            grid-row-gap: 7.1rem;
+            h5 {
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                padding-bottom: 1.6rem;
+            }
+            .barra {
+                max-width: 21.2rem;
+                height: 4rem;
+            }
+        }
+    }
+}

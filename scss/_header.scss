@@ -1,0 +1,33 @@
+header {
+    position: sticky;
+    top: 0;
+    margin-top: 1.6rem;
+    z-index: 2023;
+    background-color: $background;
+    height: 7rem;
+    .content-header {
+        @include flexCenterJustify;
+        padding: .8rem .8rem .8rem 2.1rem;
+        .left {
+            @include flex-center;
+            gap: 1.6rem;
+            align-items: center;
+            .logo-img {
+                margin-top: 1.4rem;
+            }
+            .logo {
+                font-size: 3.6rem;
+            }
+        }
+        .right{
+            ul {
+                display: flex;
+                justify-content: space-between;
+                gap: 1.6rem;
+                margin-right: 25.3rem;
+                max-width: 85.6rem;
+                width: 100%;
+            }
+        } 
+    }
+}
